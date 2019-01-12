@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+/* All that's left is: 
+transitions 
+fix join now form
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+.container p {
+  margin: 2em 0;
+  text-align: center;
+}
+section {
+  padding: 1em;
+}
+/*Navigation*/
+#main-nav {
+  background-color: #232a3b;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 0.5em;
+}
+i {
+  color: pink;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+h1 {
+  font-family: "Audiowide", cursive;
+  font-size: 1.4em;
+}
+h1,
+h2,
+h3 {
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2em;
+}
+.pink-word {
+  color: pink;
+}
+button {
+  width: 100%;
+  border: 2px solid pink;
+  padding: 1em;
+}
+fieldset {
+  margin: 1.3rem 0;
+}
+/*HEADER*/
+header {
+  color: white;
+}
+/*HERO IMAGE*/
+header > p {
+  background: #232a3b url("../images/hero-image.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+  min-height: 250px;
+  text-align: center;
+  font-size: 3em;
+  padding: 100px 50px;
+  font-family: "Audiowide", cursive;
+}
+/*join now*/
+#join-now {
+  display: flex;
+  background-color: #232a3b;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  font-size: 1.2em;
+  text-align: center;
+}
+#join-now > a {
+  background-color: aqua;
+  margin-left: 15px;
+  border-radius: 3px;
+  padding: 4px 10px;
+  color: #232a3b;
+}
+#join-now > a:hover {
+  border: 2px solid aqua;
+  color: aqua;
+  background-color: #232a3b;
+}
+
+/*ABOUT*/
+#about {
+  text-align: center;
+}
+
+#about .container {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+.perk {
+  margin-top: 50px;
+}
+
+.perks {
+}
+.perks i {
+  font-size: 4em;
+  margin-top: 10px;
+}
+
+/*Pricing*/
+#pricing {
+  text-align: center;
+  background-color: #232a3b;
+  color: white;
+}
+.pricing-card {
+  border: 1px solid #232a3b;
+  margin-bottom: 10px;
+}
+
+.pricing-card li {
+  border-bottom: 1px solid #232a3b;
+  width: 100%;
+  padding: 1.2rem;
+  background-color: white;
+  color: black !important;
+}
+.pricing-card-header {
+  color: white !important;
+  background-color: pink !important;
+  padding: 1.5em;
+  font-size: 1.2em;
+}
+.pricing-card a {
+  width: 80%;
+  border: 1px solid pink;
+  border-radius: 10px;
+  color: pink;
+  padding: 0.5em 4em;
+}
+/*CONTACT*/
+#contact {
+  padding-top: 2em;
+}
+form {
+  margin-top: 2.5rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1.3em;
+}
+input[type="submit"] {
+  padding: 16px;
+  font-size: 4em;
+}
+/*FOOTER*/
+footer {
+  background-color: #232a3b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+#footer i {
+  color: pink;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 2.5em 0;
+}
+.social-media > i {
+  margin-right: 20px;
+  color: pink;
+  font-size: 24px;
+}
+footer p {
+  text-align: center;
+}
+
+/*trainers.html*/
+#trainers-section {
+  background: url(../images/trainers-section.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  padding: 1em;
+}
+#trainers-section h2 {
+  margin: 50px 0;
+}
+.trainers {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+.trainer {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+/*join-now-form.html*/
+#join-now-form-container {
+  width: 100%;
+  margin: auto;
+}
+
+fieldset {
+  border: none;
+}
+
+/*locations.html*/
+#locations-container {
+  padding: 1rem;
+}
+.locations {
+  margin-top: 1rem;
+}
+.location {
+  background-color: pink;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 90%;
+  text-align: center;
+}
+#join-now-form-container button {
+  margin: 1.2rem 0;
+}
+
+/*MEDIA QUERIES*/
+
+/*TABLETS*/
+@media (min-width: 768px) {
+  #main-nav {
+    display: flex;
+    align-items: center;
+  }
+  #main-nav h1 {
+    margin: 0 auto 0 10%;
+  }
+  #main-nav ul {
+    display: flex;
+    align-content: flex-end;
+    margin-right: 10%;
+  }
+  #main-nav li {
+    padding: 10px;
+    font-size: 0.8em;
+    margin-right: 10px;
+  }
+
+  .perks {
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+  }
+  .perk {
+    /*margin-top: 50px 10px 0 0;*/
+    width: 30%;
+  }
+  #pricing {
+    padding: 5%;
+  }
+  .pricing-cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-content: space-around;
+  }
+  .pricing-card {
+    flex-grow: 1;
+  }
+  .pricing-card li {
+    padding: 0.7em;
+  }
+  .pricing-card li:last-child {
+    padding: 2em 0;
+  }
+  .pricing-card:nth-child(2) {
+    margin: 0 2%;
+  }
+  footer {
+  }
+  footer > .container {
+    display: flex;
+  }
+  .about-and-social {
+    flex-basis: 70%;
+  }
+  .company-info {
+    flex-basis: 30%;
+    margin-left: 10px;
+  }
+  form > .container {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    margin: 0;
+  }
+  .user-info,
+  .user-message {
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+
+  #trainers-section {
+  }
+  .trainers {
+    width: 50%;
+    margin: auto;
+  }
+  .trainer {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  #join-now-form-container {
+    width: 80%;
+    margin: auto;
+  }
+  .locations {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+  }
+  .location {
+    width: 30%;
+  }
+}
+
+/*LARGE SCREENS*/
+@media (min-width: 960px) {
+  header > p {
+    padding: 10%;
+    font-size: 5em;
+  }
+}
+
+/*EXTRA-LARGE SCREENS*/
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2em;
+  }
+  .perk:nth-child(2) {
+    margin: 0 5%;
+  }
+  #join-now-form-container {
+    width: 50%;
+    margin: auto;
+  }
+}
